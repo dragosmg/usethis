@@ -17,23 +17,27 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -42,7 +46,7 @@
 
 <!-- docsearch -->
 <script src="../docsearch.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
 <link href="../docsearch.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
@@ -50,23 +54,27 @@
 
 <meta property="og:title" content="Use pkgdown — use_pkgdown" />
 <meta property="og:description" content="pkgdown makes it easy to turn your package into
-a beautiful website. There are two helper functions:
-use_pkgdown(): creates a pkgdown config file and adds the file and
-destination directory to .Rbuildignore.
-use_pkgdown_travis(): helps you set up pkgdown for automatic deployment
-on Travis-CI. Specifically, it:
-Adds the docs/ folder to .gitignore and .Rbuildignore.
-Builds favicons if your package contains a package logo,
-and adds the resulting pkgdown/ folder to .Rbuildignore.
-Creates an empty gh-pages branch for the pkgdown site to be
-deployed to.
-Prompts you about what to do next regarding Travis-CI deployment
-keys and updating your .travis.yml.
+a beautiful website. usethis provides two functions help you use pkgdown:
+use_pkgdown(): creates a pkgdown config file, adds relevant files or
+directories to .Rbuildignore and .gitignore, and builds favicons if
+your package has a logo.
+use_pkgdown_github_pages(): implements the GitHub setup needed to
+automatically publish your pkgdown site to GitHub pages:
+use_github_pages() prepares to publish the pkgdown site from the
+github-pages branch
+use_github_action(&quot;pkgdown&quot;) configures a
+GitHub Action to automatically build the pkgdown site and deploy it via
+GitHub Pages
+The pkgdown site's URL is added to the pkgdown configuration file,
+to the URL field of DESCRIPTION, and to the GitHub repo.
 
 
-" />
+
+use_pkgdown_travis() is deprecated; we no longer recommend that you use
+Travis-CI." />
 <meta property="og:image" content="https://usethis.r-lib.org/logo.png" />
-<meta name="twitter:card" content="summary" />
+
+
 
 
 
@@ -92,9 +100,15 @@ keys and updating your .travis.yml.
 </script>
 
 
+  
+
+  
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -108,7 +122,7 @@ keys and updating your .travis.yml.
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">usethis</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.5.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1.9000</span>
       </span>
     </div>
 
@@ -134,6 +148,9 @@ keys and updating your .travis.yml.
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="../articles/articles/git-credentials.html">Managing Git(Hub) Credentials</a>
+    </li>
+    <li>
       <a href="../articles/articles/pr-functions.html">Pull request helpers</a>
     </li>
   </ul>
@@ -147,13 +164,19 @@ keys and updating your .travis.yml.
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Blog posts</li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2019/04/usethis-1.5.0/">usethis 1.5.0 (and 1.4.0)</a>
+      <a href="https://www.tidyverse.org/blog/2020/12/usethis-2-0-0/">usethis 2.0.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2018/02/usethis-1-3-0/">usethis 1.3.0</a>
+      <a href="https://www.tidyverse.org/blog/2020/04/usethis-1-6-0/">usethis 1.6.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2017/11/usethis-1.0.0/">usethis 1.0.0 (and 1.1.0)</a>
+      <a href="https://www.tidyverse.org/blog/2019/04/usethis-1.5.0/">usethis 1.5.0 (and 1.4.0)</a>
+    </li>
+    <li>
+      <a href="https://www.tidyverse.org/blog/2018/02/usethis-1-3-0/">usethis 1.3.0</a>
+    </li>
+    <li>
+      <a href="https://www.tidyverse.org/blog/2017/11/usethis-1.0.0/">usethis 1.0.0 (and 1.1.0)</a>
     </li>
     <li class="divider"></li>
     <li>
@@ -164,8 +187,8 @@ keys and updating your .travis.yml.
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-lib/usethis">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/usethis/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -195,26 +218,31 @@ keys and updating your .travis.yml.
 
     <div class="ref-description">
     <p><a href='https://pkgdown.r-lib.org'>pkgdown</a> makes it easy to turn your package into
-a beautiful website. There are two helper functions:</p><ul>
-<li><p><code>use_pkgdown()</code>: creates a pkgdown config file and adds the file and
-destination directory to <code>.Rbuildignore</code>.</p></li>
-<li><p><code>use_pkgdown_travis()</code>: helps you set up pkgdown for automatic deployment
-on Travis-CI. Specifically, it:</p><ul>
-<li><p>Adds the <code>docs/</code> folder to <code>.gitignore</code> and <code>.Rbuildignore</code>.</p></li>
-<li><p>Builds favicons if your package contains a package logo,
-and adds the resulting <code>pkgdown/</code> folder to <code>.Rbuildignore</code>.</p></li>
-<li><p>Creates an empty <code>gh-pages</code> branch for the pkgdown site to be
-deployed to.</p></li>
-<li><p>Prompts you about what to do next regarding Travis-CI deployment
-keys and updating your <code>.travis.yml</code>.</p></li>
+a beautiful website. usethis provides two functions help you use pkgdown:</p><ul>
+<li><p><code>use_pkgdown()</code>: creates a pkgdown config file, adds relevant files or
+directories to <code>.Rbuildignore</code> and <code>.gitignore</code>, and builds favicons if
+your package has a logo.</p></li>
+<li><p><code>use_pkgdown_github_pages()</code>: implements the GitHub setup needed to
+automatically publish your pkgdown site to GitHub pages:</p><ul>
+<li><p><code><a href='use_github_pages.html'>use_github_pages()</a></code> prepares to publish the pkgdown site from the
+<code>github-pages</code> branch</p></li>
+<li><p><code><a href='use_github_action.html'>use_github_action("pkgdown")</a></code> configures a
+GitHub Action to automatically build the pkgdown site and deploy it via
+GitHub Pages</p></li>
+<li><p>The pkgdown site's URL is added to the pkgdown configuration file,
+to the URL field of DESCRIPTION, and to the GitHub repo.</p></li>
 </ul></li>
 </ul>
 
+<p><code>use_pkgdown_travis()</code> is deprecated; we no longer recommend that you use
+Travis-CI.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>use_pkgdown</span>(<span class='kw'>config_file</span> <span class='kw'>=</span> <span class='st'>"_pkgdown.yml"</span>, <span class='kw'>destdir</span> <span class='kw'>=</span> <span class='st'>"docs"</span>)
+    <div class="ref-usage sourceCode"><pre class='sourceCode r'><code><span class='fu'>use_pkgdown</span><span class='op'>(</span>config_file <span class='op'>=</span> <span class='st'>"_pkgdown.yml"</span>, destdir <span class='op'>=</span> <span class='st'>"docs"</span><span class='op'>)</span>
 
-<span class='fu'>use_pkgdown_travis</span>()</pre>
+<span class='fu'>use_pkgdown_github_pages</span><span class='op'>(</span><span class='op'>)</span>
+
+<span class='fu'>use_pkgdown_travis</span><span class='op'>(</span><span class='op'>)</span></code></pre></div>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -234,24 +262,21 @@ keys and updating your <code>.travis.yml</code>.</p></li>
     <div class='dont-index'><p><a href='https://pkgdown.r-lib.org/articles/pkgdown.html#configuration'>https://pkgdown.r-lib.org/articles/pkgdown.html#configuration</a></p></div>
 
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#see-also">See also</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='http://hadley.nz'>Hadley Wickham</a>, <a href='https://jennybryan.org'>Jennifer Bryan</a>, <a href='https://www.rstudio.com'><img src='https://www.tidyverse.org/rstudio-logo.svg' alt='RStudio' height='24' /></a>.</p>
+  <p><p>Developed by <a href="http://hadley.nz" class="external-link">Hadley Wickham</a>, <a href="https://jennybryan.org" class="external-link">Jennifer Bryan</a>, Malcolm Barrett, <a href="https://www.rstudio.com" class="external-link"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" height="24"></a>.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9001.</p></p>
 </div>
 
       </footer>
@@ -276,6 +301,8 @@ keys and updating your <code>.travis.yml</code>.</p></li>
 </script>
 
 
+
+  
 
   </body>
 </html>

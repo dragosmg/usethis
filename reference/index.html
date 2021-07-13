@@ -17,23 +17,27 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -42,7 +46,7 @@
 
 <!-- docsearch -->
 <script src="../docsearch.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
 <link href="../docsearch.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
@@ -50,7 +54,8 @@
 
 <meta property="og:title" content="Function reference" />
 <meta property="og:image" content="https://usethis.r-lib.org/logo.png" />
-<meta name="twitter:card" content="summary" />
+
+
 
 
 
@@ -76,9 +81,15 @@
 </script>
 
 
+  
+
+  
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -92,7 +103,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">usethis</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.5.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1.9000</span>
       </span>
     </div>
 
@@ -118,6 +129,9 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="../articles/articles/git-credentials.html">Managing Git(Hub) Credentials</a>
+    </li>
+    <li>
       <a href="../articles/articles/pr-functions.html">Pull request helpers</a>
     </li>
   </ul>
@@ -131,13 +145,19 @@
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Blog posts</li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2019/04/usethis-1.5.0/">usethis 1.5.0 (and 1.4.0)</a>
+      <a href="https://www.tidyverse.org/blog/2020/12/usethis-2-0-0/">usethis 2.0.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2018/02/usethis-1-3-0/">usethis 1.3.0</a>
+      <a href="https://www.tidyverse.org/blog/2020/04/usethis-1-6-0/">usethis 1.6.0</a>
     </li>
     <li>
-      <a href="https://www.tidyverse.org/articles/2017/11/usethis-1.0.0/">usethis 1.0.0 (and 1.1.0)</a>
+      <a href="https://www.tidyverse.org/blog/2019/04/usethis-1.5.0/">usethis 1.5.0 (and 1.4.0)</a>
+    </li>
+    <li>
+      <a href="https://www.tidyverse.org/blog/2018/02/usethis-1-3-0/">usethis 1.3.0</a>
+    </li>
+    <li>
+      <a href="https://www.tidyverse.org/blog/2017/11/usethis-1.0.0/">usethis 1.0.0 (and 1.1.0)</a>
     </li>
     <li class="divider"></li>
     <li>
@@ -148,8 +168,8 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/r-lib/usethis">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-lib/usethis/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -187,9 +207,14 @@
       <tr>
         <th colspan="2">
           <h2 id="section-create" class="hasAnchor"><a href="#section-create" class="anchor"></a>Create</h2>
-          <p class="section-desc"><p>Create a project de novo or from an existing source, either local or remote</p></p>
+          <p class="section-desc"><p>Create a project <em>de novo</em> or from an existing source, either local or remote</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -213,9 +238,14 @@
       <tr>
         <th colspan="2">
           <h2 id="section-active-project" class="hasAnchor"><a href="#section-active-project" class="anchor"></a>Active project</h2>
-          <p class="section-desc"><p>Query or set the project targetted by usethis functions that don’t take a path</p></p>
+          <p class="section-desc"><p>Query or set the project targeted by usethis functions that don’t take a path</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -242,6 +272,11 @@
           <p class="section-desc"><p>Add or modify files typically found in R packages</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -254,6 +289,12 @@
           <p><code><a href="use_package.html">use_package()</a></code> <code><a href="use_package.html">use_dev_package()</a></code> </p>
         </td>
         <td><p>Depend on another package</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_import_from.html">use_import_from()</a></code> </p>
+        </td>
+        <td><p>Import a function from another package</p></td>
       </tr><tr>
         
         <td>
@@ -277,7 +318,7 @@
         <td>
           <p><code><a href="use_vignette.html">use_vignette()</a></code> <code><a href="use_vignette.html">use_article()</a></code> </p>
         </td>
-        <td><p>Create a vignette or article.</p></td>
+        <td><p>Create a vignette or article</p></td>
       </tr><tr>
         
         <td>
@@ -304,6 +345,11 @@
           <p class="section-desc"><p>Package setup tasks, typically performed once.</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -313,13 +359,19 @@
       </tr><tr>
         
         <td>
+          <p><code><a href="use_data_table.html">use_data_table()</a></code> </p>
+        </td>
+        <td><p>Prepare for importing data.table</p></td>
+      </tr><tr>
+        
+        <td>
           <p><code><a href="use_description.html">use_description()</a></code> <code><a href="use_description.html">use_description_defaults()</a></code> </p>
         </td>
         <td><p>Create or modify a DESCRIPTION file</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="licenses.html">use_mit_license()</a></code> <code><a href="licenses.html">use_gpl3_license()</a></code> <code><a href="licenses.html">use_agpl3_license()</a></code> <code><a href="licenses.html">use_lgpl_license()</a></code> <code><a href="licenses.html">use_apl2_license()</a></code> <code><a href="licenses.html">use_cc0_license()</a></code> <code><a href="licenses.html">use_ccby_license()</a></code> </p>
+          <p><code><a href="licenses.html">use_mit_license()</a></code> <code><a href="licenses.html">use_gpl_license()</a></code> <code><a href="licenses.html">use_agpl_license()</a></code> <code><a href="licenses.html">use_lgpl_license()</a></code> <code><a href="licenses.html">use_apache_license()</a></code> <code><a href="licenses.html">use_cc0_license()</a></code> <code><a href="licenses.html">use_ccby_license()</a></code> <code><a href="licenses.html">use_proprietary_license()</a></code> </p>
         </td>
         <td><p>License a package</p></td>
       </tr><tr>
@@ -337,13 +389,7 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="ci.html">use_travis()</a></code> <code><a href="ci.html">use_travis_badge()</a></code> <code><a href="ci.html">use_appveyor()</a></code> <code><a href="ci.html">use_appveyor_badge()</a></code> <code><a href="ci.html">use_gitlab_ci()</a></code> <code><a href="ci.html">use_circleci()</a></code> <code><a href="ci.html">use_circleci_badge()</a></code> <code><a href="ci.html">use_azure_pipelines()</a></code> </p>
-        </td>
-        <td><p>Continuous integration setup and badges</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
+          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_rstudio_prefs()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
         </td>
         <td><p>Open configuration files</p></td>
       </tr><tr>
@@ -352,6 +398,12 @@
           <p><code><a href="use_build_ignore.html">use_build_ignore()</a></code> </p>
         </td>
         <td><p>Add files to <code>.Rbuildignore</code></p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_cpp11.html">use_cpp11()</a></code> </p>
+        </td>
+        <td><p>Use C++ via the cpp11 package</p></td>
       </tr><tr>
         
         <td>
@@ -415,7 +467,19 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="use_pkgdown.html">use_pkgdown()</a></code> <code><a href="use_pkgdown.html">use_pkgdown_travis()</a></code> </p>
+          <p><code><a href="ci.html">use_travis()</a></code> <code><a href="ci.html">use_travis_badge()</a></code> <code><a href="ci.html">use_appveyor()</a></code> <code><a href="ci.html">use_appveyor_badge()</a></code> <code><a href="ci.html">use_gitlab_ci()</a></code> <code><a href="ci.html">use_circleci()</a></code> <code><a href="ci.html">use_circleci_badge()</a></code> </p>
+        </td>
+        <td><p>Continuous integration setup and badges</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="github_actions.html">use_github_actions()</a></code> <code><a href="github_actions.html">use_github_actions_badge()</a></code> </p>
+        </td>
+        <td><p>GitHub Actions setup and badges</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_pkgdown.html">use_pkgdown()</a></code> <code><a href="use_pkgdown.html">use_pkgdown_github_pages()</a></code> <code><a href="use_pkgdown.html">use_pkgdown_travis()</a></code> </p>
         </td>
         <td><p>Use pkgdown</p></td>
       </tr><tr>
@@ -430,6 +494,12 @@
           <p><code><a href="use_lifecycle.html">use_lifecycle()</a></code> </p>
         </td>
         <td><p>Use lifecycle badges</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_testthat.html">use_testthat()</a></code> </p>
+        </td>
+        <td><p>Sets up overall testing infrastructure</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -438,12 +508,17 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="tidyverse.html">create_tidy_package()</a></code> <code><a href="tidyverse.html">use_tidy_ci()</a></code> <code><a href="tidyverse.html">use_tidy_description()</a></code> <code><a href="tidyverse.html">use_tidy_eval()</a></code> <code><a href="tidyverse.html">use_tidy_contributing()</a></code> <code><a href="tidyverse.html">use_tidy_support()</a></code> <code><a href="tidyverse.html">use_tidy_issue_template()</a></code> <code><a href="tidyverse.html">use_tidy_coc()</a></code> <code><a href="tidyverse.html">use_tidy_github()</a></code> <code><a href="tidyverse.html">use_tidy_style()</a></code> <code><a href="tidyverse.html">use_tidy_release_test_env()</a></code> </p>
+          <p><code><a href="use_cran_comments.html">use_cran_comments()</a></code> </p>
         </td>
-        <td><p>Helpers for tidyverse development</p></td>
+        <td><p>CRAN submission comments</p></td>
       </tr><tr>
         
         <td>
@@ -455,13 +530,7 @@
         <td>
           <p><code><a href="use_release_issue.html">use_release_issue()</a></code> </p>
         </td>
-        <td><p>Create a release issue checklist</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="use_cran_comments.html">use_cran_comments()</a></code> </p>
-        </td>
-        <td><p>CRAN submission comments</p></td>
+        <td><p>Create a release checklist in a GitHub issue</p></td>
       </tr><tr>
         
         <td>
@@ -482,10 +551,21 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="ci.html">use_travis()</a></code> <code><a href="ci.html">use_travis_badge()</a></code> <code><a href="ci.html">use_appveyor()</a></code> <code><a href="ci.html">use_appveyor_badge()</a></code> <code><a href="ci.html">use_gitlab_ci()</a></code> <code><a href="ci.html">use_circleci()</a></code> <code><a href="ci.html">use_circleci_badge()</a></code> <code><a href="ci.html">use_azure_pipelines()</a></code> </p>
+          <p><code><a href="use_github_action.html">use_github_action()</a></code> <code><a href="use_github_action.html">use_github_action_check_release()</a></code> <code><a href="use_github_action.html">use_github_action_check_standard()</a></code> <code><a href="use_github_action.html">use_github_action_check_full()</a></code> <code><a href="use_github_action.html">use_github_action_pr_commands()</a></code> </p>
+        </td>
+        <td><p>Use a specific GitHub Actions workflow</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="ci.html">use_travis()</a></code> <code><a href="ci.html">use_travis_badge()</a></code> <code><a href="ci.html">use_appveyor()</a></code> <code><a href="ci.html">use_appveyor_badge()</a></code> <code><a href="ci.html">use_gitlab_ci()</a></code> <code><a href="ci.html">use_circleci()</a></code> <code><a href="ci.html">use_circleci_badge()</a></code> </p>
         </td>
         <td><p>Continuous integration setup and badges</p></td>
       </tr><tr>
@@ -502,10 +582,15 @@
           <p class="section-desc"><p>Conventions used in the tidyverse and r-lib organisations</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="tidyverse.html">create_tidy_package()</a></code> <code><a href="tidyverse.html">use_tidy_ci()</a></code> <code><a href="tidyverse.html">use_tidy_description()</a></code> <code><a href="tidyverse.html">use_tidy_eval()</a></code> <code><a href="tidyverse.html">use_tidy_contributing()</a></code> <code><a href="tidyverse.html">use_tidy_support()</a></code> <code><a href="tidyverse.html">use_tidy_issue_template()</a></code> <code><a href="tidyverse.html">use_tidy_coc()</a></code> <code><a href="tidyverse.html">use_tidy_github()</a></code> <code><a href="tidyverse.html">use_tidy_style()</a></code> <code><a href="tidyverse.html">use_tidy_release_test_env()</a></code> </p>
+          <p><code><a href="tidyverse.html">use_tidy_github_actions()</a></code> <code><a href="tidyverse.html">create_tidy_package()</a></code> <code><a href="tidyverse.html">use_tidy_description()</a></code> <code><a href="tidyverse.html">use_tidy_dependencies()</a></code> <code><a href="tidyverse.html">use_tidy_eval()</a></code> <code><a href="tidyverse.html">use_tidy_contributing()</a></code> <code><a href="tidyverse.html">use_tidy_support()</a></code> <code><a href="tidyverse.html">use_tidy_issue_template()</a></code> <code><a href="tidyverse.html">use_tidy_coc()</a></code> <code><a href="tidyverse.html">use_tidy_github()</a></code> <code><a href="tidyverse.html">use_tidy_style()</a></code> </p>
         </td>
         <td><p>Helpers for tidyverse development</p></td>
       </tr><tr>
@@ -525,9 +610,14 @@
       <tr>
         <th colspan="2">
           <h2 id="section-configuration" class="hasAnchor"><a href="#section-configuration" class="anchor"></a>Configuration</h2>
-          <p class="section-desc"><p>Configure the behaviour of R, RStudio, or Git, globally as a user or for a specific project</p></p>
+          <p class="section-desc"><p>Configure the behaviour of R or RStudio, globally as a user or for a specific project</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -543,13 +633,7 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="use_git_config.html">use_git_config()</a></code> </p>
-        </td>
-        <td><p>Configure Git</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
+          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_rstudio_prefs()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
         </td>
         <td><p>Open configuration files</p></td>
       </tr>
@@ -560,6 +644,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -569,27 +658,15 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="use_git_config.html">use_git_config()</a></code> </p>
-        </td>
-        <td><p>Configure Git</p></td>
-      </tr><tr>
-        
-        <td>
           <p><code><a href="use_git.html">use_git()</a></code> </p>
         </td>
         <td><p>Initialise a git repository</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="git_protocol.html">git_protocol()</a></code> <code><a href="git_protocol.html">use_git_protocol()</a></code> </p>
+          <p><code><a href="github_actions.html">use_github_actions()</a></code> <code><a href="github_actions.html">use_github_actions_badge()</a></code> </p>
         </td>
-        <td><p>Produce or register git protocol</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="use_git_remote.html">use_git_remote()</a></code> <code><a href="use_git_remote.html">git_remotes()</a></code> </p>
-        </td>
-        <td><p>Configure and report Git remotes</p></td>
+        <td><p>GitHub Actions setup and badges</p></td>
       </tr><tr>
         
         <td>
@@ -599,27 +676,81 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="use_github_links.html">use_github_links()</a></code> </p>
+          <p><code><a href="use_github_action.html">use_github_action()</a></code> <code><a href="use_github_action.html">use_github_action_check_release()</a></code> <code><a href="use_github_action.html">use_github_action_check_standard()</a></code> <code><a href="use_github_action.html">use_github_action_check_full()</a></code> <code><a href="use_github_action.html">use_github_action_pr_commands()</a></code> </p>
         </td>
-        <td><p>Use GitHub links in URL and BugReports</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="use_git_ignore.html">use_git_ignore()</a></code> </p>
-        </td>
-        <td><p>Tell git to ignore files</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="use_git_hook.html">use_git_hook()</a></code> </p>
-        </td>
-        <td><p>Add a git hook</p></td>
+        <td><p>Use a specific GitHub Actions workflow</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="use_github_labels.html">use_github_labels()</a></code> <code><a href="use_github_labels.html">use_tidy_labels()</a></code> <code><a href="use_github_labels.html">tidy_labels()</a></code> <code><a href="use_github_labels.html">tidy_labels_rename()</a></code> <code><a href="use_github_labels.html">tidy_label_colours()</a></code> <code><a href="use_github_labels.html">tidy_label_descriptions()</a></code> </p>
         </td>
         <td><p>Manage GitHub issue labels</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_github_links.html">use_github_links()</a></code> </p>
+        </td>
+        <td><p>Use GitHub links in URL and BugReports</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_github_pages.html">use_github_pages()</a></code> </p>
+        </td>
+        <td><p>Configure a GitHub Pages site</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_github_release.html">use_github_release()</a></code> </p>
+        </td>
+        <td><p>Draft a GitHub release</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="git_sitrep.html">git_sitrep()</a></code> </p>
+        </td>
+        <td><p>Git/GitHub sitrep</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="github-token.html">create_github_token()</a></code> <code><a href="github-token.html">gh_token_help()</a></code> </p>
+        </td>
+        <td><p>Get help with GitHub personal access tokens</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="git_vaccinate.html">git_vaccinate()</a></code> </p>
+        </td>
+        <td><p>Vaccinate your global gitignore file</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_git_config.html">use_git_config()</a></code> </p>
+        </td>
+        <td><p>Configure Git</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_git_ignore.html">use_git_ignore()</a></code> </p>
+        </td>
+        <td><p>Tell Git to ignore files</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="git_protocol.html">git_protocol()</a></code> <code><a href="git_protocol.html">use_git_protocol()</a></code> </p>
+        </td>
+        <td><p>See or set the default Git protocol</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_git_remote.html">use_git_remote()</a></code> <code><a href="use_git_remote.html">git_remotes()</a></code> </p>
+        </td>
+        <td><p>Configure and report Git remotes</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="use_git_hook.html">use_git_hook()</a></code> </p>
+        </td>
+        <td><p>Add a git hook</p></td>
       </tr><tr>
         
         <td>
@@ -635,39 +766,39 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="browse-this.html">browse_github()</a></code> <code><a href="browse-this.html">browse_github_issues()</a></code> <code><a href="browse-this.html">browse_github_pulls()</a></code> <code><a href="browse-this.html">browse_travis()</a></code> <code><a href="browse-this.html">browse_circleci()</a></code> <code><a href="browse-this.html">browse_cran()</a></code> </p>
+          <p><code><a href="git_branch_default.html">git_branch_default()</a></code> </p>
         </td>
-        <td><p>Quickly browse to important package webpages</p></td>
+        <td><p>Determine default Git branch</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="browse_github_token.html">browse_github_token()</a></code> <code><a href="browse_github_token.html">browse_github_pat()</a></code> <code><a href="browse_github_token.html">github_token()</a></code> </p>
+          <p><code><a href="browse-this.html">browse_package()</a></code> <code><a href="browse-this.html">browse_project()</a></code> <code><a href="browse-this.html">browse_github()</a></code> <code><a href="browse-this.html">browse_github_issues()</a></code> <code><a href="browse-this.html">browse_github_pulls()</a></code> <code><a href="browse-this.html">browse_github_actions()</a></code> <code><a href="browse-this.html">browse_travis()</a></code> <code><a href="browse-this.html">browse_circleci()</a></code> <code><a href="browse-this.html">browse_cran()</a></code> </p>
         </td>
-        <td><p>Create and retrieve a GitHub personal access token</p></td>
+        <td><p>Visit important project-related web pages</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
+          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_rstudio_prefs()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
         </td>
         <td><p>Open configuration files</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="git_credentials.html">git_credentials()</a></code> <code><a href="git_credentials.html">use_git_credentials()</a></code> </p>
+          <p><code><a href="issue-this.html">issue_close_community()</a></code> <code><a href="issue-this.html">issue_reprex_needed()</a></code> </p>
         </td>
-        <td><p>Produce or register git credentials</p></td>
+        <td><p>Helpers for GitHub issues</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="git_sitrep.html">git_sitrep()</a></code> </p>
+          <p><code><a href="tidyverse.html">use_tidy_github_actions()</a></code> <code><a href="tidyverse.html">create_tidy_package()</a></code> <code><a href="tidyverse.html">use_tidy_description()</a></code> <code><a href="tidyverse.html">use_tidy_dependencies()</a></code> <code><a href="tidyverse.html">use_tidy_eval()</a></code> <code><a href="tidyverse.html">use_tidy_contributing()</a></code> <code><a href="tidyverse.html">use_tidy_support()</a></code> <code><a href="tidyverse.html">use_tidy_issue_template()</a></code> <code><a href="tidyverse.html">use_tidy_coc()</a></code> <code><a href="tidyverse.html">use_tidy_github()</a></code> <code><a href="tidyverse.html">use_tidy_style()</a></code> </p>
         </td>
-        <td><p>git/GitHub sitrep</p></td>
+        <td><p>Helpers for tidyverse development</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="git_vaccinate.html">git_vaccinate()</a></code> </p>
+          <p><code><a href="use_release_issue.html">use_release_issue()</a></code> </p>
         </td>
-        <td><p>Vaccinate your global git ignore</p></td>
+        <td><p>Create a release checklist in a GitHub issue</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -676,10 +807,15 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="pr_init.html">pr_init()</a></code> <code><a href="pr_init.html">pr_fetch()</a></code> <code><a href="pr_init.html">pr_push()</a></code> <code><a href="pr_init.html">pr_pull()</a></code> <code><a href="pr_init.html">pr_pull_upstream()</a></code> <code><a href="pr_init.html">pr_sync()</a></code> <code><a href="pr_init.html">pr_view()</a></code> <code><a href="pr_init.html">pr_pause()</a></code> <code><a href="pr_init.html">pr_finish()</a></code> </p>
+          <p><code><a href="pull-requests.html">pr_init()</a></code> <code><a href="pull-requests.html">pr_resume()</a></code> <code><a href="pull-requests.html">pr_fetch()</a></code> <code><a href="pull-requests.html">pr_push()</a></code> <code><a href="pull-requests.html">pr_pull()</a></code> <code><a href="pull-requests.html">pr_merge_main()</a></code> <code><a href="pull-requests.html">pr_view()</a></code> <code><a href="pull-requests.html">pr_pause()</a></code> <code><a href="pull-requests.html">pr_finish()</a></code> <code><a href="pull-requests.html">pr_forget()</a></code> </p>
         </td>
         <td><p>Helpers for GitHub pull requests</p></td>
       </tr>
@@ -690,12 +826,23 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
+          <p><code><a href="edit.html">edit_r_profile()</a></code> <code><a href="edit.html">edit_r_environ()</a></code> <code><a href="edit.html">edit_r_buildignore()</a></code> <code><a href="edit.html">edit_r_makevars()</a></code> <code><a href="edit.html">edit_rstudio_snippets()</a></code> <code><a href="edit.html">edit_rstudio_prefs()</a></code> <code><a href="edit.html">edit_git_config()</a></code> <code><a href="edit.html">edit_git_ignore()</a></code> </p>
         </td>
         <td><p>Open configuration files</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="rename_files.html">rename_files()</a></code> </p>
+        </td>
+        <td><p>Automatically rename paired <code>R/</code> and <code>test/</code> files</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -704,18 +851,17 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
-          <p><code><a href="browse-this.html">browse_github()</a></code> <code><a href="browse-this.html">browse_github_issues()</a></code> <code><a href="browse-this.html">browse_github_pulls()</a></code> <code><a href="browse-this.html">browse_travis()</a></code> <code><a href="browse-this.html">browse_circleci()</a></code> <code><a href="browse-this.html">browse_cran()</a></code> </p>
+          <p><code><a href="browse-this.html">browse_package()</a></code> <code><a href="browse-this.html">browse_project()</a></code> <code><a href="browse-this.html">browse_github()</a></code> <code><a href="browse-this.html">browse_github_issues()</a></code> <code><a href="browse-this.html">browse_github_pulls()</a></code> <code><a href="browse-this.html">browse_github_actions()</a></code> <code><a href="browse-this.html">browse_travis()</a></code> <code><a href="browse-this.html">browse_circleci()</a></code> <code><a href="browse-this.html">browse_cran()</a></code> </p>
         </td>
-        <td><p>Quickly browse to important package webpages</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="browse_github_token.html">browse_github_token()</a></code> <code><a href="browse_github_token.html">browse_github_pat()</a></code> <code><a href="browse_github_token.html">github_token()</a></code> </p>
-        </td>
-        <td><p>Create and retrieve a GitHub personal access token</p></td>
+        <td><p>Visit important project-related web pages</p></td>
       </tr>
     </tbody><tbody>
       <tr>
@@ -724,6 +870,11 @@
           <p class="section-desc"><p>These functions are mostly for internal use. But they are useful for those who wish to offer usethis-like support for, e.g., workflows specific to an organisation.</p></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -749,38 +900,50 @@
         </td>
         <td><p>Add RStudio Project infrastructure</p></td>
       </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-defunct-and-deprecated-functions" class="hasAnchor"><a href="#section-defunct-and-deprecated-functions" class="anchor"></a>Defunct and deprecated functions</h2>
+          <p class="section-desc"><p><a href="https://lifecycle.r-lib.org/articles/lifecycle.html" class="external-link"> <img src="figures/lifecycle-defunct.svg" alt="Defunct lifecycle"></a> <a href="https://lifecycle.r-lib.org/articles/lifecycle.html" class="external-link"> <img src="figures/lifecycle-deprecated.svg" alt="Deprecated lifecycle"></a></p></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="git_credentials.html">git_credentials()</a></code> <code><a href="git_credentials.html">use_git_credentials()</a></code> </p>
+        </td>
+        <td><p>Produce or register credentials for git2r</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usethis-defunct.html">pr_pull_upstream()</a></code> <code><a href="usethis-defunct.html">pr_sync()</a></code> <code><a href="usethis-defunct.html">browse_github_token()</a></code> <code><a href="usethis-defunct.html">browse_github_pat()</a></code> <code><a href="usethis-defunct.html">github_token()</a></code> </p>
+        </td>
+        <td><p>Defunct and deprecated functions in usethis</p></td>
+      </tr>
     </tbody>
     </table>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-create">Create</a></li>
-      <li><a href="#section-active-project">Active project</a></li>
-      <li><a href="#section-package-development">Package development</a></li>
-      <li><a href="#section-package-setup">Package setup</a></li>
-      <li><a href="#section-package-release">Package release</a></li>
-      <li><a href="#section-continuous-integration">Continuous integration</a></li>
-      <li><a href="#section-tidyverse-development">Tidyverse development</a></li>
-      <li><a href="#section-configuration">Configuration</a></li>
-      <li><a href="#section-git-and-github">Git and GitHub</a></li>
-      <li><a href="#section-pull-requests">Pull requests</a></li>
-      <li><a href="#section-edit">Edit</a></li>
-      <li><a href="#section-browse">Browse</a></li>
-      <li><a href="#section-helpers">Helpers</a></li>
-    </ul>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='http://hadley.nz'>Hadley Wickham</a>, <a href='https://jennybryan.org'>Jennifer Bryan</a>, <a href='https://www.rstudio.com'><img src='https://www.tidyverse.org/rstudio-logo.svg' alt='RStudio' height='24' /></a>.</p>
+  <p><p>Developed by <a href="http://hadley.nz" class="external-link">Hadley Wickham</a>, <a href="https://jennybryan.org" class="external-link">Jennifer Bryan</a>, Malcolm Barrett, <a href="https://www.rstudio.com" class="external-link"><img src="https://www.tidyverse.org/rstudio-logo.svg" alt="RStudio" height="24"></a>.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9001.</p></p>
 </div>
 
       </footer>
@@ -805,6 +968,8 @@
 </script>
 
 
+
+  
 
   </body>
 </html>
