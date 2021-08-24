@@ -25,6 +25,10 @@
 #'   such that you have permission to create repositories in this
 #'   `organisation`.
 #' @param private If `TRUE`, creates a private repository.
+#' @param visibility can be `public` or `private`. If your organisation is
+#'   associated with an enterprise account using GitHub Enterprise Cloud or
+#'   GitHub Enterprise Server 2.20+, visibility can also be `internal`. It
+#'   overrides the `private` parameter when you use both.
 #' @inheritParams git_protocol
 #' @param host GitHub host to target, passed to the `.api_url` argument of
 #'   [gh::gh()]. If unspecified, gh defaults to "https://api.github.com",
@@ -54,6 +58,7 @@
 #' }
 use_github <- function(organisation = NULL,
                        private = FALSE,
+                       visibility = NULL,
                        protocol = git_protocol(),
                        host = NULL,
                        auth_token = deprecated(),
@@ -111,6 +116,7 @@ use_github <- function(organisation = NULL,
       name = repo_name,
       description = repo_desc,
       private = private,
+      visibility = visibility,
       .api_url = host
     )
   }
