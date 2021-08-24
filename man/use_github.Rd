@@ -7,6 +7,7 @@
 use_github(
   organisation = NULL,
   private = FALSE,
+  visibility = NULL,
   protocol = git_protocol(),
   host = NULL,
   auth_token = deprecated(),
@@ -21,6 +22,11 @@ such that you have permission to create repositories in this
 \code{organisation}.}
 
 \item{private}{If \code{TRUE}, creates a private repository.}
+
+\item{visibility}{can be \code{public} or \code{private}. If your organisation is
+associated with an enterprise account using GitHub Enterprise Cloud or
+GitHub Enterprise Server 2.20+, visibility can also be \code{internal}. It
+overrides the \code{private} parameter when you use both.}
 
 \item{protocol}{One of "https" or "ssh"}
 
